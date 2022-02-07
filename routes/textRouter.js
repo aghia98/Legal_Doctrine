@@ -107,6 +107,7 @@ textRouter.route('/:textId/state') //modify text state according to the scheme
                         res.statusCode = 403; 
                         res.end();
                     }
+                    break;
             }
             text.save()
             .then((text)=>{
